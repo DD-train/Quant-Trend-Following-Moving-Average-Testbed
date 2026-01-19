@@ -34,4 +34,4 @@ but **how a simple signal behaves under realistic constraints and where it fails
 ## Research Report
 
 A structured quantitative research report describing the experimental design,
-distributional perspective, and key findings is available in [report.md].
+and key findings is available in [report.md].
