@@ -29,3 +29,9 @@ and focuses on understanding:
 ## Key Takeaway
 The core takeaway is not whether the MA strategy is profitable,
 but **how a simple signal behaves under realistic constraints and where it fails**.
+
+
+## Research Report
+
+A structured quantitative research report describing the experimental design,
+distributional perspective, and key findings is available in [report.md].
