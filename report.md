@@ -1,4 +1,4 @@
-# MA Trend-Following Research Testbed
+# MA Trend-Following Research Report
 
 ## 1. Research Goals
 
