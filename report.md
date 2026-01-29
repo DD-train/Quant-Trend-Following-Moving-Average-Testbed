@@ -123,6 +123,11 @@ The strategy’s performance is robust to path-level perturbations and does not 
 
 ---
 
+**Overall Conclusion (Exp01):**  
+Across parameter perturbations, market regimes, time subsampling, and path-level resampling, the MA signal exhibits structural robustness.  
+Observed performance is not attributable to parameter overfitting, regime-specific effects, or a single favorable historical realization.
+
+---
 
 ## 5. Risk Control Diagnostics
 
