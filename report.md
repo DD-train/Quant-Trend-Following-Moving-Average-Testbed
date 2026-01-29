@@ -83,6 +83,47 @@ The presence of broad plateaus across regimes suggests that the signal’s behav
 
 ---
 
+### Exp01D – Time Subsampling Robustness (Rolling Windows)
+
+**Question:**  
+Is the observed performance stable across different time periods, or driven by a small number of favorable subsamples?
+
+**Method:**  
+The full sample is split into overlapping rolling windows (fixed-length, overlapping in time). For each window, the same MA strategy configuration is evaluated and summary metrics are recorded.  
+Performance metrics are treated as random variables under finite-sample uncertainty.
+
+**Results:**  
+Across rolling windows, Sharpe ratios and annual returns remain consistently positive, with limited dispersion. No window exhibits extreme degradation, and tail risk remains bounded.
+
+![Exp01 | Metric Sampling Distribution (Time uncertainty)](figures/exp01_metric_sampling_distribution.png)
+
+**Conclusion:**  
+The MA signal demonstrates robustness to time subsampling, indicating that performance is not driven by a specific historical period.
+
+---
+
+### Exp01E – Path Robustness via Block Bootstrap
+
+**Question:**  
+Is the strategy’s performance dependent on a particular historical return ordering, or robust under alternative plausible return paths?
+
+**Method:**  
+A block bootstrap (21 trading days per block, 1000 paths) is applied to the full-sample strategy daily returns.  
+Returns are resampled using contiguous blocks  to preserve short-term dependence and volatility clustering.  
+For each bootstrap path, performance metrics (Annual Return, Sharpe, Max Drawdown) are recomputed to obtain empirical distributions.
+
+**Results:**  
+Across 1000 bootstrap paths, the median Sharpe remains around 0.8, with over 99% of paths exhibiting positive Sharpe and annual returns. Drawdowns are concentrated within a controlled range, with no catastrophic tail behavior.
+
+![Exp01 | Block_Bootstrap_PnL_Distribution(Path uncertainty)](figures/exp01_block_bootstrap_pnl_distribution.png)
+
+
+**Conclusion:**  
+The strategy’s performance is robust to path-level perturbations and does not rely on a specific historical ordering of returns, supporting structural robustness under finite-sample uncertainty.
+
+---
+
+
 ## 5. Risk Control Diagnostics
 
 ### Exp02 – Volatility Targeting
