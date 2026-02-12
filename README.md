@@ -23,7 +23,7 @@ and focuses on understanding:
 - **Exp04**: Volatility Targeting and Risk-off Gate
 - **Exp05**: Execution Frictions
 - **Exp06**: Execution Delays
-- **Exp07**: Capacity / liquidity proxy stress test
+- **Exp07**: Capacity / liquidity Proxy Stress Test
 - **Exp08**: Out-of-sample validation
 
 ## Key Takeaway
