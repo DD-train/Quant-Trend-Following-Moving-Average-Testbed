@@ -17,7 +17,7 @@ and focuses on understanding:
 
 ## Experiment Structure
 
-- **Exp01**: Signal stability and robustness
+- **Exp01**: Signal Stability and Robustness
 - **Exp02**: Risk Control via Volatility Targeting
 - **Exp03**: Risk Control via Risk-off Gate
 - **Exp04**: Volatility Targeting and Risk-off Gate
